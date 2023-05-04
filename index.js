@@ -11,10 +11,13 @@ app.use(morgan("combined")); // http logger
 app.set("view engine", "ejs"); // set view engine
 
 app.get("/", (req, res) => {
-  res.render("home");
-  // res.status(200).json(employee);
+    res.render("home");
+    // res.status(200).json(employee);
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+    console.log(`Example app listening on port ${port}`);
+});
+app.get("/scp", (req, res) => {
+    res.render("scp");
 });
