@@ -18,6 +18,9 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
-app.get("/scp", (req, res) => {
-    res.render("scp");
+app.get("/scp-001", (req, res) => {
+    res.render("scp001");
+});
+app.get("/scp-002", (req, res) => {
+    res.render("scp002");
 });
